@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace OxyPlot.Axes
+﻿namespace OxyPlot.Axes
 {
     public class AngleAxisFullPlotArea : AngleAxis
     {

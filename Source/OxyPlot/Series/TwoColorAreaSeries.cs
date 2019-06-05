@@ -10,7 +10,6 @@
 namespace OxyPlot.Series
 {
     using System.Collections.Generic;
-    using System.Linq;
 
     /// <summary>
     /// Represents a two-color area series.

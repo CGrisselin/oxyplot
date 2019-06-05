@@ -13,8 +13,6 @@ namespace OxyPlot.Series
     using System.Collections.Generic;
     using System.Linq;
 
-    using Axes;
-
     /// <summary>
     /// Represents a series that can be bound to a collection of <see cref="HistogramItem"/>.
     /// </summary>

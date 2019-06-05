@@ -12,7 +12,6 @@ namespace OxyPlot.Axes
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using System.Text;
 
     /// <summary>
     /// Provides functionality to render <see cref="MagnitudeAxis" /> using the full plot area.

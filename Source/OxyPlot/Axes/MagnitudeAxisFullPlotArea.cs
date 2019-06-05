@@ -10,8 +10,6 @@
 namespace OxyPlot.Axes
 {
     using System;
-    using System.Collections.Generic;
-    using System.Text;
 
     public class MagnitudeAxisFullPlotArea : MagnitudeAxis
     {
