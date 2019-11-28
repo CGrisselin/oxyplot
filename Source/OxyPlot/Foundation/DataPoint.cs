@@ -28,7 +28,7 @@ namespace OxyPlot
         /// </summary>
         [SuppressMessage("StyleCop.CSharp.NamingRules", "SA1307:AccessibleFieldsMustBeginWithUpperCaseLetter",
             Justification = "Reviewed. Suppression is OK here.")]
-        internal readonly double x;
+        internal double x;
 
         /// <summary>
         /// The y-coordinate.
@@ -42,11 +42,14 @@ namespace OxyPlot
         /// </summary>
         /// <param name="x">The x.</param>
         /// <param name="y">The y.</param>
-        public DataPoint(double x, double y)
+        public DataPoint(double x, double y, Action<double> actionOnChanged = null)
         {
             this.x = x;
             this.y = y;
+            ActionOnChanged = actionOnChanged;
         }
+
+        public Action<double> ActionOnChanged { get; }
 
         /// <summary>
         /// Gets the X-coordinate of the point.
@@ -58,6 +61,7 @@ namespace OxyPlot
             {
                 return this.x;
             }
+            set { x = value; }
         }
 
         /// <summary>
